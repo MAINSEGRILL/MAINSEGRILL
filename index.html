@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+ <!-- CSS -->
+ <link rel="stylesheet" href="style.css">
+
+<!-- Titulo -->
+<title>MAINSE GRILL</title>
+    
+<!-- Favicon = Es el icono que aparece al lado del nombre en la pestaña -->
+<link rel="icon" type="image/x-icon" href="imagenes/LOGO_PNG.png">
+
+<!-- Metadatos -->
+<meta charset="utf-8">
+<meta name="author" content="MAINSE GRILL">
+<meta name="description" content="Pagina Web de MAINSE GRILL">
+<meta name="keywords" content="Asadores, MAINSE, GRILL, Empresa, Emprendedor">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!-- Agregar el CDN de los iconos que vamos a utilizar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- Bootstrap -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+ <!-- Iconos de Bootstrap -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+   <!-- Barra de navegacion -->
+   <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/LOGO_PNG.png" width="50" alt="Logo de la página web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#asadores">Asadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#accesorios">Accesorios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#personalizados">Personalizados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero. Es lo primero que se muestra-->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/LOGO_PNG.png" alt="Logo de Mainse Grill">
+      
+      <h1>MAINSE GRILL</h1>
+      <h2>Asadores de calidad</h2>
+    
+      </div>
+    </section>
+
+        <!-- Inicio -->
+        <section id="inicio" class="inicio seccion-oscura">
+            <div class="contenedor">
+              <h2 class="seccion-titulo">Te invitamos a conocernos</h2>
+              <p class="seccion-texto">En MAINSE GRILL nos comprometos a crear asadores de calidad...</p>
+            </div>
+          </section>
+        
+  
+      <!-- Asadores -->
+      <section id="asadores">
+
+        <h2 class="seccion-titulo">Asadores y más...</h2>
+            <h3 class="seccion-descripcion">Estos son nuestros principales asadores</h3>
+
+        <div class="contenedor2">
+
+            <div class="imagenes-contenedor2">
+                <div class="opaco">
+                <div class="image"><img src="imagenes/Modelo_1.png" alt="">
+                    <div class="overlay">
+                        <p>Modelo 1</p>
+                        <div class="iconos-contenedor">
+                            <i class="fa-solid fa-fire-burner"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="opaco">
+                    <div class="image"><img src="imagenes/Modelo_2.png" alt="">
+                        <div class="overlay">
+                            <p>Modelo 2</p>
+                            <div class="iconos-contenedor">
+                                <i class="fa-solid fa-fire-burner"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="opaco">
+                        <div class="image"><img src="imagenes/Modelo_3.jpeg" alt="">
+                            <div class="overlay">
+                                <p>Modelo 3</p>
+                                <div class="iconos-contenedor">
+                                    <i class="fa-solid fa-fire-burner"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                <div class="opaco">
+                <div class="image"><img src="imagenes/Modelo_4.jpeg" alt="">
+                    <div class="overlay">
+                        <p>Modelo 4</p>
+                        <div class="iconos-contenedor">
+                            <i class="fa-solid fa-fire-burner"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="imagenes/Asador_1.jpeg" alt="">
+            </div>
+
+        </div>
+        <script>
+            document.querySelectorAll('.imagenes-contenedor2 img').forEach(image=>{
+                image.onclick = ()=> {
+                    document.querySelector('.popup-image').style.display='block';
+                    document.querySelector('.popup-image img').src=image.getAttribute('src');
+                }
+            });
+            document.querySelector('.popup-image span').onclick=()=>{
+                document.querySelector('.popup-image').style.display='none';
+            }
+        </script>
+      </section>
+
+          <!-- Accesorios -->
+          <section id="accesorios" class="accesorios seccion-clara">
+            <h2 class="seccion-titulo">Accesorios</h2>
+            <h3 class="seccion-descripcion">Accesorios ideales para el parrillero que llevas dentro</h3>
+            
+            <!-- Carrusel -->
+            <div id="accesorios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <img class="accesorio-imagen rounded-circle" src="imagenes/Accesorio_1.jpeg" alt="Accesorio 1">
+                    <p class="accesorio-texto">La señorita America Cruz demostró ser una estudiante muy proactiva y entusiasta durante toda su participación en el bootcamp de Tecnolochicas PRO. La recomiendo ampliamente.</p>
+                    <div class="accesorio-info">
+                      <p class="cliente">Accesorio 1</p>
+                      <p class="cargo">Modelo 1</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <img class="accesorio-imagen rounded-circle" src="imagenes/Accesorio_2.jpeg" alt="Accesorio 2">
+                    <p class="accesorio-texto">America ha demostrado habilidades para el desarrollo de  Front-end, ha mostrado interés en temas relacionados al desarrollo de páginas web mejorando su desempeño.</p>
+                    <div class="accesorio-info">
+                      <p class="cliente">Accesorio 2</p>
+                      <p class="cargo">Modelo 2</p>
+                    </div>
+                  </div>
+                </div>
+      
+                
+                <div class="carousel-item">
+                  <div class="container">
+                    <img class="accesorio-imagen rounded-circle" src="imagenes/Accesorio_3.jpeg" alt="Accesorio 3">
+                    <p class="accesorio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+                    <div class="accesorio-info">
+                      <p class="cliente">Accesorio 3</p>
+                      <p class="cargo">Modelo 3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <button class="carousel-control-prev" type="button" data-bs-target="#accesorios-carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#accesorios-carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </section>
+
+          <!-- Personalizados -->
+        <section id="personalizados" class="personalizados seccion-clara">
+            <h2 class="seccion-titulo">Personalizados</h2>
+            <h3 class="seccion-descripcion">Asadores hechos a tu medida</h3>
+            <div class="card">
+                <div class="face front">
+                    <img src="imagenes/Pedido_1.jpeg" alt=" ">
+                    <h4>Asador Personalizado 1</h4>
+                </div>
+                <div class="face back">
+                    <h4>Asador Personalizado 1</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti, suscipit eveniet exercitationem amet atque saepe animi! Tempore, impedit. Labore dolor totam harum culpa repellat ea est? Voluptates, sed enim.</p>
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face front">
+                    <img src="imagenes/Pedido_2.jpeg" alt=" ">
+                    <h4>Asador Personalizado 2</h4>
+                </div>
+                <div class="face back">
+                    <h4>Asador Personalizado 1</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti, suscipit eveniet exercitationem amet atque saepe animi! Tempore, impedit. Labore dolor totam harum culpa repellat ea est? Voluptates, sed enim.</p>
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face front">
+                    <img src="imagenes/Pedido_3.png" alt=" ">
+                    <h4>Asador Personalizado 3</h4>
+                </div>
+                <div class="face back">
+                    <h4>Asador Personalizado 1</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti, suscipit eveniet exercitationem amet atque saepe animi! Tempore, impedit. Labore dolor totam harum culpa repellat ea est? Voluptates, sed enim.</p>
+                    <div class="link">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+          <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+              <div class="col-12 col-md-4 seccion-titulo">
+                ¡Contactanos!
+              </div>
+              <div class="col-12 col-md-4 descripcion">
+                Contáctanos para iniciar el asador que cambiara tu vida.
+              </div>
+              <div class="col-12 col-md-4">
+                <a href="mailto:mainsegrill@gmail.com">
+                  <button type="button">  
+                    Contacto
+                    <i class="bi bi-envelope-check-fill"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Pie de pagina (footer) -->
+      <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+        <img class="footer-logo" src="imagenes/LOGO_PNG.png" alt="Logo del portafolio">
+        <p class="footer-texto text-center">MAINSE GRILL</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+          <a href="https://www.facebook.com/share/VkxhmBu19f1WhesX/?mibextid=WC7FNe" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/mainse_grill/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:mainsegrill@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+        <div class="derechos-de-autor">MAINSE GRILL (2024) &#174;</div>
+      </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+          <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+          <script src="main.js"></script>
+</body>
+</html>
